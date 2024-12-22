@@ -1,0 +1,29 @@
+[2024-12-15 13:15:45] [WARNING]: 虚拟设备信息不存在, 将自动生成随机设备. 
+[2024-12-15 13:15:47] [WARNING]: 自动注册实例已关闭，请配置 sign-server 端自动注册实例以保持正常签名 
+[2024-12-15 13:15:53] [WARNING]: 检查协议更新失败: Get "https://ghproxy.com/https://raw.githubusercontent.com/RomiChan/protocol-versions/master/android_pad.json": read tcp 192.168.43.8:11909->150.136.252.237:443: wsarecv: An existing connection was forcibly closed by the remote host. 
+[2024-12-15 13:16:04] [WARNING]: 登录需要滑条验证码, 请验证后重试. 
+[2024-12-15 13:16:04] [WARNING]: 请选择提交滑块ticket方式: 
+[2024-12-15 13:16:04] [WARNING]: 1. 自动提交 
+[2024-12-15 13:16:04] [WARNING]: 2. 手动抓取提交 
+[2024-12-15 13:16:04] [WARNING]: 请输入(1 - 2)： 
+[2024-12-15 13:16:06] [WARNING]: 请前往该地址验证 -> https://ti.qq.com/safe/tools/captcha/sms-verify-login?aid=16&uin=3884201323&sid=1587914685978404370&cap_cd=gDQT3KR7r9seu_tOHlA1yRK9_rOtGHn3DzUcxkjhIW-QOOmQtiZ-Xg**&clientype=1&apptype=2  
+[2024-12-15 13:16:06] [WARNING]: 请输入ticket： (Enter 提交) 
+[2024-12-15 13:16:41] [WARNING]: 登录失败: 登录失败，请前往QQ官网im.qq.com下载最新版QQ后重试，或通过问题反馈与我们联系。 Code: 45 
+[2024-12-15 13:16:41] [WARNING]: 你的账号被限制登录, 请配置 SignServer 后重试 
+[2024-12-15 13:17:54] [FATAL]: open cache image db failed: The process cannot access the file because it is being used by another process. 
+[2024-12-15 13:18:02] [FATAL]: open cache image db failed: The process cannot access the file because it is being used by another process. 
+[2024-12-15 13:19:33] [WARNING]: 检查协议更新失败: Get "https://ghproxy.com/https://raw.githubusercontent.com/RomiChan/protocol-versions/master/android_pad.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers) 
+[2024-12-15 13:19:36] [WARNING]: 登录需要滑条验证码, 请验证后重试. 
+[2024-12-15 13:19:36] [WARNING]: 请选择提交滑块ticket方式: 
+[2024-12-15 13:19:36] [WARNING]: 1. 自动提交 
+[2024-12-15 13:19:36] [WARNING]: 2. 手动抓取提交 
+[2024-12-15 13:19:36] [WARNING]: 请输入(1 - 2)： 
+[2024-12-15 13:19:39] [WARNING]: 请前往该地址验证 -> https://ti.qq.com/safe/tools/captcha/sms-verify-login?aid=16&uin=3884201323&sid=2939059368066180839&cap_cd=rLLoZPOcfH_3F-OtQEkWTf-mg6e34-4PT8u2yZGRD0qw9ipnx1vv1w**&clientype=1&apptype=2  
+[2024-12-15 13:19:39] [WARNING]: 请输入ticket： (Enter 提交) 
+[2024-12-15 13:20:02] [WARNING]: 登录失败: 登录失败，请前往QQ官网im.qq.com下载最新版QQ后重试，或通过问题反馈与我们联系。 Code: 45 
+[2024-12-15 13:20:02] [WARNING]: 你的账号被限制登录, 请配置 SignServer 后重试 
+[2024-12-15 13:21:12] [FATAL]: open cache image db failed: The process cannot access the file because it is being used by another process. 
+[2024-12-15 13:23:53] [ERROR]: Protocol -> decrypt payload error: unknown flag 
+[2024-12-15 13:23:54] [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005 
+[2024-12-15 13:24:09] [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005 
+[2024-12-15 13:24:24] [ERROR]: Protocol -> register client failed: Packet timed out 
