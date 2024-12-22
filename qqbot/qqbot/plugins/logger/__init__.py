@@ -16,5 +16,3 @@ async def handle_keyword(bot: Bot, event: Event, state: T_State):
     user_id = event.get_user_id()
     logger.info(f"消息: {message}")
     logger.info(f"消息来源: {user_id}")
-    if message in keywords:
-        await trigger.finish(random.choice(message_murasama))
