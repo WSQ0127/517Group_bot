@@ -12,7 +12,7 @@ trigger_keyword = "waifu"
 trigger = on_message()
 
 # 数据文件路径，用于保存每日结果
-DATA_FILE = "daily_results.json"
+DATA_FILE = "data/daily_results.json"
 
 def load_daily_results():
     """加载保存的每日结果数据"""
