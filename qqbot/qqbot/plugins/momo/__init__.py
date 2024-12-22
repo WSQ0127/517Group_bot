@@ -3,10 +3,9 @@ from nonebot.adapters.onebot.v11 import Bot, Event, MessageSegment
 from nonebot.log import logger
 import re
 
-# 定义消息处理器
-mo_mo = on_message()
+trigger = on_message()
 
-@mo_mo.handle()
+@trigger.handle()
 async def handle_mo_mo(bot: Bot, event: Event):
     try:
         logger.debug(f"收到消息内容: {event.raw_message}")
@@ -27,7 +26,7 @@ async def handle_mo_mo(bot: Bot, event: Event):
         logger.debug(f"生成的GIF URL: {gif_url}")
 
         # 发送图片
-        await mo_mo.finish(MessageSegment.image(gif_url))
+        await trigger.finish(MessageSegment.image(gif_url))
 
     except Exception as e:
         logger.error(f"处理消息时发生错误: {e}")
