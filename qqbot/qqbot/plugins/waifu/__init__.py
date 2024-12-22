@@ -9,7 +9,7 @@ trigger_keyword = "waifu"
 
 trigger = on_message()
 
-DATA_FILE = "data/daily_results.json"
+DATA_FILE = "data/waifu.json"
 
 def load_daily_results():
     if os.path.exists(DATA_FILE):
@@ -36,9 +36,9 @@ async def handle_waifu(bot: Bot, event: Event):
         reset_daily_results()
         daily_results = {"last_reset_date": today.isoformat()}
 
-    msg = str(event.get_message()).strip()
+    message = str(event.get_message()).strip()
 
-    if msg.lower() == trigger_keyword:
+    if message.lower() == trigger_keyword:
         group_id = event.group_id if hasattr(event, "group_id") else None
         user_id = event.get_user_id()
         message_id = event.message_id

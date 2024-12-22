@@ -10,6 +10,6 @@ trigger = on_message()
 
 @trigger.handle()
 async def handle_keyword(bot: Bot, event: Event, state: T_State):
-    msg = str(event.get_message())
-    if any(keyword in msg for keyword in keywords):
+    message = str(event.get_message())
+    if any(keyword in message for keyword in keywords):
         await trigger.send(MessageSegment.face(297) + MessageSegment.face(297) + MessageSegment.face(297))

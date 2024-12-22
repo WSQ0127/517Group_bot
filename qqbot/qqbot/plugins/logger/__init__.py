@@ -8,13 +8,13 @@ from nonebot import logger
 import random
 import re
 
-keywords = ["丛雨", "丛雨！", "丛雨~"]
-message_murasama = ["咦，在叫我吗？怎么啦？", "是在叫我吗！", "叫我有什么事吗?", "主人~有什么吩咐吗？", ]
 trigger = on_message()
 
 @trigger.handle()
 async def handle_keyword(bot: Bot, event: Event, state: T_State):
     message = str(event.get_message())
     user_id = event.get_user_id()
+    logger.info(f"消息: {message}")
+    logger.info(f"消息来源: {user_id}")
     if message in keywords:
         await trigger.finish(random.choice(message_murasama))
