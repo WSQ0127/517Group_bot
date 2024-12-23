@@ -1,4 +1,5 @@
 from nonebot import on_message
+from nonebot.plugin import PluginMetadata
 from nonebot.adapters.onebot.v11 import Bot, Event
 from nonebot.matcher import Matcher
 from nonebot.params import Message

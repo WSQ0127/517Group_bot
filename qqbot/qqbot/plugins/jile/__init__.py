@@ -1,6 +1,7 @@
 import json
 import os
 from nonebot import on_message
+from nonebot.plugin import PluginMetadata
 from nonebot.adapters.onebot.v11 import Bot, Event
 from nonebot.typing import T_State
 

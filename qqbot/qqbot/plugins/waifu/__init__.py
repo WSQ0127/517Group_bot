@@ -1,4 +1,5 @@
 from nonebot import on_message
+from nonebot.plugin import PluginMetadata
 from nonebot.adapters.onebot.v11 import Bot, Event, MessageSegment
 import random
 import datetime
