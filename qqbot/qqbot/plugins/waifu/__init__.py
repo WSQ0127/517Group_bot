@@ -5,6 +5,12 @@ import datetime
 import json
 import os
 
+__plugin_meta__ = PluginMetadata(
+    name="今日老婆",
+    description="每天随机抽取一个群友做老婆",
+    usage="waifu",
+)
+
 trigger_keyword = "waifu"
 
 trigger = on_message()

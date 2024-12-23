@@ -5,6 +5,12 @@ from nonebot.typing import T_State
 import random
 import datetime
 
+__plugin_meta__ = PluginMetadata(
+    name="膜拜",
+    description="当群友膜拜是跟着膜拜",
+    usage="\%\%、orz、sto",
+)
+
 keywords = ["%%", "orz", "sto"]
 trigger = on_message()
 

@@ -4,6 +4,12 @@ from nonebot import on_message
 from nonebot.adapters.onebot.v11 import Bot, Event
 from nonebot.typing import T_State
 
+__plugin_meta__ = PluginMetadata(
+    name="急了",
+    description="当群友急了时进行嘲讽（（（",
+    usage="草、艹、操",
+)
+
 # 数据文件路径
 DATA_PATH = "data/jile.json"
 

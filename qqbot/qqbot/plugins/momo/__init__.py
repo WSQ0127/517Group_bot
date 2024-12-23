@@ -3,6 +3,12 @@ from nonebot.adapters.onebot.v11 import Bot, Event, MessageSegment
 from nonebot.log import logger
 import re
 
+__plugin_meta__ = PluginMetadata(
+    name="摸摸群友",
+    description="生成摸摸群友的表情包，使用APIhttps://api.52vmy.cn/api/avath/rua?qq=",
+    usage="摸摸@某人",
+)
+
 trigger = on_message()
 
 @trigger.handle()

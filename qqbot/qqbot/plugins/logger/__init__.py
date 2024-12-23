@@ -1,3 +1,4 @@
+'''
 from nonebot import on_message
 from nonebot.adapters.onebot.v11 import Bot, Event
 from nonebot.matcher import Matcher
@@ -23,3 +24,4 @@ async def handle_keyword(bot: Bot, event: Event, state: T_State):
     logger.info(f"群聊: {group_name}({group_id})")
     logger.info(f"用户: {user_name}({user_id})")
     logger.info(f"消息: {message}")
+'''

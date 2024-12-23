@@ -2,6 +2,12 @@ from nonebot import on_message
 from nonebot.adapters.onebot.v11 import Bot, Event, Message, MessageSegment
 from nonebot.matcher import Matcher
 
+__plugin_meta__ = PluginMetadata(
+    name="接龙复读",
+    description="当群友重复某条消息时跟着重复",
+    usage="无",
+)
+
 # 用于存储消息内容的缓存
 last_message = "wocdwelkkdoowafd"
 message_count = 1
@@ -17,6 +23,8 @@ async def repeat_message(bot: Bot, event: Event):
 
     # 来自机器人就跳过
     if user_id == bot.self_id:
+        message_count = 1
+        last_message = message
         return
     
     # 判断是否重复
