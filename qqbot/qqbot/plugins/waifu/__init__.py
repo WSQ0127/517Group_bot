@@ -25,11 +25,14 @@ def load_daily_results():
     return {}
 
 def save_daily_results(data):
+    os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     with open(DATA_FILE, "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
 def reset_daily_results():
+    os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     save_daily_results({"last_reset_date": datetime.date.today().isoformat()})
+
 
 @trigger.handle()
 async def handle_waifu(bot: Bot, event: Event):
@@ -53,7 +56,7 @@ async def handle_waifu(bot: Bot, event: Event):
         # 是否在群聊中触发
         if group_id:
             group_results = daily_results.setdefault(str(group_id), {})
-            
+
             # 如果已经抽过
             if user_id in group_results:
                 selected_member = group_results[user_id]
@@ -74,7 +77,8 @@ async def handle_waifu(bot: Bot, event: Event):
                 group_results[user_id] = {
                     "user_id": selected_member.get("user_id"),
                     "nickname": selected_member.get("nickname"),
-                    "card": selected_member.get("card")
+                    "card": selected_member.get("card"),
+                    "timestamp": datetime.datetime.now().isoformat()
                 }
                 save_daily_results(daily_results)
 

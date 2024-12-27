@@ -25,6 +25,7 @@ async def repeat_message(bot: Bot, event: Event):
     # 来自机器人就跳过
     if user_id == bot.self_id:
         message_count = 1
+        last_message = "wocdwelkkdoowafd"
         last_message = message
         return
     
